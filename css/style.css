@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  min-height: 69vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(banner-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  height: 60px;
+  background: #fff;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  float: right;
+  margin-right: 200px;
+}
+nav ul li {
+  background: #fff;
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  background: #999999;
+}
+nav ul ul {
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul ul li {
+  width: 150px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.welcome-text {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  margin: 8% 25%;
+  text-align: center;
+}
+.welcome-text span {
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  color: #986700;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.welcome-text h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
+}
+.welcome-text hr {
+  border-top: 1px solid yellow;
+}
+.welcome-text p {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+.welcome-text a {
+  background: #959800;
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+  color: #fff;
+}
+.welcome-text a:hover {
+  background: #fff;
+  color: #333;
+}
+
+/*CSS of 4 pictures Grid*/
+.back {
+  background: #cccccc;
+  padding: 4em;
+  text-align: center;
+}
+.back h1 {
+  font-weight: bold;
+  text-align: center;
+}
+.back p {
+  text-align: center;
+  padding: 2em;
+}
+.cardsE {
+  margin: auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card_images {
+  border-radius: 100%;
+}
+.back a {
+  background: #fece00;
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 30px;
+  display: inline-block;
+  color: #111;
+}
+.back a:hover {
+  background: #fff;
+  color: #999999;
+}
+/*CSS of 1 Pictures Grid*/
+.flex-container {
+  margin: auto;
+  background: #fff;
+  padding: 4em;
+  min-height: 50vh;
+  display: flex;
+}
+.width-half {
+  padding-left: 10%;
+  width: 50%;
+  margin-bottom: 100px;
+}
+.width-half img {
+  width: 70%;
+}
+.flex-container a {
+  background: #111;
+  border: 1px solid black;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: 30px;
+  display: inline-block;
+  color: #fff;
+}
+.flex-container a:hover {
+  background: #329a69;
+  color: #000;
+}
+/*Pricing Table*/
+.pBack {
+  box-sizing: border-box;
+  margin: auto;
+  background: #fff;
+  min-height: 50vh;
+  align-items: center;
+}
+.pBack h1 {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.columns {
+  float: left;
+  width: 31%;
+  padding: 15px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price .header {
+  background-color: #111;
+  color: #fff;
+  font-size: 25px;
+}
+.price .headerQ {
+  background-color: #666666;
+  color: #fff;
+  font-size: 25px;
+}
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+.price .grey {
+  font-size: 20px;
+}
+.price .greys {
+  font-size: 20px;
+  background-color: #ccc;
+}
+.button {
+  background-color: #04aa6d;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/*CSS of 3 pictures Grid*/
+.backs {
+  margin: auto;
+  padding: 10em;
+}
+.cards {
+  margin: auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.card_image {
+  width: 100%;
+}
+/*Footer*/
+footer {
+  /*position: fixed;*/
+  bottom: 0px;
+  width: 100%;
+  min-height: 30vh;
+  background: #000032;
+}
+.main-content {
+  display: flex;
+  color: #fff;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+}
+.right .content p {
+  text-align: justify;
+}
+.btn {
+  border: none;
+  background: darkorange;
+  color: #fff;
+  padding: 10px 30px;
+}
+.search-box input {
+  height: 30px;
+}
